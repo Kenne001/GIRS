@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasarawa Tourism</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://fullcalendar.io/releases/fullcalendar/3.9.0/fullcalendar.min.css">
+    <script src="https://fullcalendar.io/releases/fullcalendar/3.9.0/lib/jquery.min.js"></script>
+    <script src="https://fullcalendar.io/releases/fullcalendar/3.9.0/lib/moment.min.js"></script>
+    <script src="https://fullcalendar.io/releases/fullcalendar/3.9.0/fullcalendar.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+    <header>
+        <h1>Nasarawa Tourism</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Search for a tourist site or hotel">
+            <button type="submit">Search</button>
+        </form>
+    </header>
+    <div id="map" style="height: 600px;"></div>
+    <div id="calendar"></div>
+    <div id="weather"></div>
+    <form id="review-form">
+        <label for="site">Site:</label>
+        <input type="text" id="site" name="site" required>
+        <label for="rating">Rating:</label>
+        <select id="rating" name="rating" required>
+            <option value="5">5</option>
+            <option value="4">4</option>
+            <option value="3">3</option>
+            <option value="2">2</option>
+            <option value="1">1</option>
+        </select>
+        <label for="comment">Review:</label>
+        <textarea id="comment" name="comment" required></textarea>
+        <button type="submit">Submit Review</button>
+    </form>
+    <div id="reviews"></div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

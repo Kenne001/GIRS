@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <header>
+        <h1>Reviews</h1>
+    </header>
+    <main>
+        <form id="review-form">
+            <label for="site">Site:</label>
+            <input type="text" id="site" name="site" required>
+            <label for="rating">Rating:</label>
+            <select id="rating" name="rating" required>
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+            </select>
+            <label for="comment">Review:</label>
+            <textarea id="comment" name="comment" required></textarea>
+            <button type="submit">Submit Review</button>
+        </form>
+        <div id="reviews">
+            <!-- Display reviews here -->
+        </div>
+        <script src="scripts.js"></script>
+    </main>
+</body>
+</html>
